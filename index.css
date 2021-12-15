@@ -1,0 +1,64 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: #f1f1f1;
+  --blue: #084D9B;
+}
+
+.wrap {
+  max-width: 250px;
+  height: 280px;
+  margin: 50px auto 0;
+  background: var(--black);
+  position: relative;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.viewBar {
+  background: var(--white);
+  height: 50px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.result {
+  font-size: 26px;
+}
+
+.arithmetic {
+  width: 50px;
+}
+
+.numeric {
+  width: 150px;
+}
+
+.btn-group {
+  height: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.btn {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 2px;
+}
+
+.btn:hover {
+  background: var(--gray);
+}
+
+.btn:active {
+  color: var(--blue);
+}
