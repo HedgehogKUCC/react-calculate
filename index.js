@@ -1,32 +1,3 @@
-
-class GeneralButton extends React.Component {
-  render() {
-    let style;
-
-    if (this.props.text === '0') {
-      style = {
-        width: '100px',
-      }
-    } else {
-      style = {
-        width: '50px',
-      }
-    }
-
-    return (
-      <button type="button" style={style} className="btn">{this.props.text}</button>
-    );
-  }
-}
-
-class ArithmeticButton extends React.Component {
-  render() {
-    return (
-      <button type="button" className="btn">{this.props.text}</button>
-    );
-  }
-}
-
 function Calculate() {
   return (
     <div className="wrap">
@@ -36,23 +7,23 @@ function Calculate() {
       </div>
       <div className="btn-group">
         <div className="arithmetic">
-          <ArithmeticButton text="+" />
-          <ArithmeticButton text="-" />
-          <ArithmeticButton text="*" />
-          <ArithmeticButton text="/" />
+          <button type="button" className="btn">+</button>
+          <button type="button" className="btn">-</button>
+          <button type="button" className="btn">*</button>
+          <button type="button" className="btn">/</button>
         </div>
         <div className="numeric">
-          <GeneralButton text="7" />
-          <GeneralButton text="8" />
-          <GeneralButton text="9" />
-          <GeneralButton text="4" />
-          <GeneralButton text="5" />
-          <GeneralButton text="6" />
-          <GeneralButton text="1" />
-          <GeneralButton text="2" />
-          <GeneralButton text="3" />
-          <GeneralButton text="0" />
-          <GeneralButton text="C" />
+          <button type="button" className="btn">7</button>
+          <button type="button" className="btn">8</button>
+          <button type="button" className="btn">9</button>
+          <button type="button" className="btn">4</button>
+          <button type="button" className="btn">5</button>
+          <button type="button" className="btn">6</button>
+          <button type="button" className="btn">1</button>
+          <button type="button" className="btn">2</button>
+          <button type="button" className="btn">3</button>
+          <button style={{ width: 100 }} type="button" className="btn">0</button>
+          <button type="button" className="btn">C</button>
         </div>
       </div>
     </div>
